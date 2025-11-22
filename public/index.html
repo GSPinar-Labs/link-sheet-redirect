@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acortador de Enlaces - Configurado</title>
+  <meta name="description" content="Sistema de redirección de URLs">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="icon">🔗</div>
+    <h1>Acortador de Enlaces</h1>
+    <div class="status-card success">
+      <div class="status-icon">✓</div>
+      <div class="status-text">
+        <strong>Bien Configurado</strong>
+        <p>El sistema está listo para redireccionar enlaces</p>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <h2>Cómo Funciona</h2>
+      <ol>
+        <li>Configura tu URL de Google Sheets en <code>url.txt</code></li>
+        <li>Sube el proyecto a GitHub Pages</li>
+        <li>Usa tus enlaces cortos: <code>tudominio.com/ruta</code></li>
+        <li>El sistema redirige automáticamente según tu CSV</li>
+      </ol>
+    </div>
+
+    <div class="info-card">
+      <h2>Formato de Google Sheets</h2>
+      <pre>Acortador de enlaces,
+URL (dominio.com/*),Destino
+/github,https://github.com
+/docs,https://docs.google.com</pre>
+      <p class="note">Las 2 primeras filas son ignoradas (título y encabezados)</p>
+    </div>
+  </div>
+</body>
+</html>

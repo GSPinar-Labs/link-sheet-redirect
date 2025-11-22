@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instrucciones - Acortador</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📋 Instrucciones de Configuración</h1>
+    
+    <div class="info-card">
+      <h2>Paso 1: Prepara tu Google Sheet</h2>
+      <p>Tu hoja debe tener este formato:</p>
+      <pre>Acortador de enlaces,
+URL (tudominio.com/*),Destino
+/link1,https://destino1.com
+/link2,https://destino2.com</pre>
+    </div>
+
+    <div class="info-card">
+      <h2>Paso 2: Publica como CSV</h2>
+      <ol>
+        <li>Abre tu Google Sheet</li>
+        <li>Ve a <strong>Archivo → Compartir → Publicar en la web</strong></li>
+        <li>Selecciona la hoja correcta</li>
+        <li>En formato, elige <strong>"Valores separados por comas (.csv)"</strong></li>
+        <li>Clic en <strong>Publicar</strong></li>
+        <li>Copia la URL generada</li>
+      </ol>
+    </div>
+
+    <div class="info-card">
+      <h2>Paso 3: Configura url.txt</h2>
+      <ol>
+        <li>Abre el archivo <code>url.txt</code> en tu editor</li>
+        <li>Pega la URL del CSV de Google Sheets</li>
+        <li>Guarda el archivo</li>
+      </ol>
+    </div>
+
+    <div class="info-card">
+      <h2>Paso 4: Despliega en GitHub Pages</h2>
+      <ol>
+        <li>Sube todos los archivos a tu repositorio de GitHub</li>
+        <li>Ve a Settings → Pages</li>
+        <li>Selecciona la rama y carpeta (generalmente <code>/public</code>)</li>
+        <li>Guarda y espera el despliegue</li>
+        <li>Opcionalmente configura tu dominio personalizado</li>
+      </ol>
+    </div>
+
+    <div class="info-card">
+      <h2>Archivos Necesarios</h2>
+      <ul>
+        <li><code>index.html</code> - Página principal</li>
+        <li><code>404.html</code> - Maneja las redirecciones</li>
+        <li><code>style.css</code> - Estilos</li>
+        <li><code>url.txt</code> - URL del Google Sheets CSV</li>
+        <li><code>redirect.html</code> - Esta página de instrucciones</li>
+      </ul>
+    </div>
+
+    <a href="/" class="btn">Volver al inicio</a>
+  </div>
+</body>
+</html>
